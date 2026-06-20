@@ -28,7 +28,7 @@ services:
           memory: 2GB   # 최대 2GB 메모리 할당
 
   app:
-    build: .
+    build: . # Dockerfile 기반으로 도커 이미지를 만듦
     container_name: spring-app
     ports:
       - "8080:8080"
